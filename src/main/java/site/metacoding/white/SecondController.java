@@ -29,12 +29,12 @@ public class SecondController {
 	// BR -> title ->제목&content=내용,x-www머시기 (content-type)
 	@PostMapping("/second") // body에 담아서 보냄
 	public String postData(String title, String content) {// 스프링 파싱 기본전략 : x-www-form-머시기
-		return "title : " + title + ",content" + content;
+		return "title : " + title + ",content :" + content;
 	}
 
 	@PutMapping("/second")
 	public String putData(String title, String content) {// 스프링 파싱 기본전략 : x-www-form-머시기 - >이형식으로 보내야함 
-		return "title : " + title + ",content" + content;
+		return "title : " + title + ",content :" + content;
 	}
 
 	@DeleteMapping("/second")
