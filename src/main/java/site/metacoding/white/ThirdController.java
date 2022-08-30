@@ -32,6 +32,6 @@ public class ThirdController {
 
 	@PutMapping("/third/{id}/json")
 	public String putJsonData(@PathVariable Integer id,@RequestBody Third third) {
-		return third.toString();//@RequestBody 클래스값을 넣을때 json을 넣겠다 하는거
+		return third.toString()+"주소로 받은거"+id;//@RequestBody 클래스값을 넣을때 json을 넣겠다 하는거
 	}
 }
